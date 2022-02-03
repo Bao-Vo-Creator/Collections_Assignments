@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   #all of the resourcesful routes are already provided for books
+  root 'books#index'
   resources :books do
     member do
       get :delete
